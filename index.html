@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: Inter;
+      src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+    }
+
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: hsl(0, 0%, 8%);
+    }
+
+    main{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: hsl(0, 0%, 12%);
+      padding: 1.5rem;
+      border-radius: 15px;
+      width: 250px; 
+      font-family: Inter;
+      box-shadow: 8px 8px 8px black;
+    }
+    .avi{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background-color: white;
+      background-image: url(./assets/images/image-ekow.jpg);
+      background-size: cover;
+      background-position: center;
+    }
+    .name{
+      color: white;
+      font-size: 17px;
+    }
+
+    .loc{
+      color: yellowgreen;
+      font-size: 12px;
+    }
+    .bio{
+      color: white;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 10px;
+    }
+    .links-box{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+    }
+
+    .link{
+      margin-top: 10px;
+      width: 250%;
+      height: 5vh;
+      text-align: center;
+      background: hsl(0, 0%, 20%);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 1s;
+    }
+
+    .link a{
+      color: white;
+      text-decoration: none;
+      font-size: 12px;
+      line-height: 5vh;
+      
+    }
+
+    .link:hover{
+      background: yellowgreen;
+    }
+
+  
+  </style>
+</head>
+<body>
+  <main>
+    <div class="avi">
+    </div>
+    <span class="name">Ekow Sackey</span>
+    <span class="loc">Accra, Ghana</span>
+    <span class="bio">"Front end developer, artist and chess enthusiast"</span>
+
+    <div class="links-box">
+
+      <div class="link">
+        <span><a href="https://github.com/SS-ekow" target="_blank">GitHub</a></span>
+      </div>
+      <div class="link">
+        <span><a href="https://www.frontendmentor.io/profile/SS-ekow" target="_blank">FrontEnd Mentor</a></span>
+      </div>
+      <div class="link">
+        <span><a href="https://www.linkedin.com/in/ns-sackey/" target="_blank">LinkedIn</a></span>
+      </div>
+      <div class="link">
+        <span><a href="https://dev.to/ekow" target="_blank">Dev.to</a></span>
+      </div>
+      <div class="link">
+        <span><a href="https://codepen.io/SS-ekow" target="_blank">CodePen</a></span>
+      </div>
+    </div>
+
+  </main>
+
+  
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
